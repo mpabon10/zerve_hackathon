@@ -1,0 +1,417 @@
+id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+name: Development
+type: 1
+canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+blocks:
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Loads CSV dataset and generates detailed profile report with row/column
+    counts, data types, memory usage, missing values, and cardinality analysis
+  height: 1000
+  id: 0cfb8c3e-8aa3-41cb-8fb9-232ffb65c3c5
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: profile_dataset
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 3000
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Displays optimized DataFrame with memory-efficient dtypes and categorical
+    encoding
+  height: 1000
+  id: 2d097e5d-cbbc-4ed4-8789-c18603465161
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: optimized_dataframe
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 3500
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Trains Lasso and Ridge logistic regression models to predict user activation
+    within 7 days, evaluates both via 5-fold CV with ROC-AUC, and visualizes ROC curves
+    and Lasso feature coefficients
+  height: 1000
+  id: 42f5be3c-cbbc-4ad2-ac0a-0dd3924cfc6f
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: lasso_ridge_activation_model
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 11000
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Builds monthly cohort retention matrix and visualizes user stickiness
+    via heatmap and month-over-month retention trends
+  height: 1000
+  id: 4ecf4673-0de3-42ee-8c46-db381a023e56
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: cohort_retention_analysis
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 5400
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: "Constructs ML dataset from 7-day user signup window with binary activation\
+    \ target (post-day-7 activity), engineering features like depth score, event counts,\
+    \ platform & OS\u2014no data leakage"
+  height: 1000
+  id: 546c827b-ab0f-4000-ae80-5cc3a508d43a
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: build_7day_ml_dataset
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 6800
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: "Comprehensive user retention analysis report synthesizing 409k events\
+    \ from 4,774 Zerve users. Defines activation, stickiness, MAU retention & feature\
+    \ depth metrics. Highlights 15.6% activation rate, Python SDK 5\xD7 conversion\
+    \ advantage, 69% single-zone users, <10% month-1 retention. Lasso model (AUC 0.84)\
+    \ predicts stickiness from first-week behavior."
+  height: 1000
+  id: 79724c34-c30e-44f8-9053-3e609920bb89
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: integrated_analysis_report
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 4
+  variables: null
+  width: 1600
+  x: 0
+  y: 15400
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Optimizes CSV loading by dropping null-heavy columns, encoding categorical
+    dtypes, and downcasting numerics to reduce memory by ~53% while benchmarking performance
+    gains
+  height: 1000
+  id: 7cf3db31-0e88-4e8e-b7e8-4faa5a80d3c9
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: optimise_pipeline
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 3000
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Creates 5 comparative bar charts visualizing activation rates and feature
+    adoption depth segmented by platform (web vs Python SDK), OS, top-10 countries,
+    and signup cohorts
+  height: 1000
+  id: 9126662e-bc74-4b95-acb4-ee063624fb0a
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: segment_comparison_charts
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 6800
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Comprehensive markdown report comparing Lasso (0.8376 AUC) vs Ridge
+    (0.8318 AUC) logistic regression models for predicting user activation within
+    7 days post-signup, identifying 7 key features (sign-in frequency, feature depth,
+    platform, agent usage, OS) and 7 actionable recommendations for improving onboarding
+  height: 1000
+  id: 91524c57-bd35-4014-b89a-383172db66f8
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: model_findings_report
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 4
+  variables: null
+  width: 1600
+  x: 10000
+  y: 12400
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Comprehensive independent review of Zerve platform analyzing user activation
+    (15.6%), retention cohorts, feature adoption depth, and lifecycle metrics across
+    4,774 users (409k events Sep-Dec 2025) with platform/OS/cohort segmentation
+  height: 1000
+  id: bc430823-0964-46fa-b9be-d3800772908a
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: analysis_summary_review
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 4
+  variables: null
+  width: 1600
+  x: 0
+  y: 11200
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Generates comprehensive exploratory data analysis of optimized dataset
+    including shape, dtypes, sample rows, event distribution, user identity fields,
+    date ranges, numeric statistics, categorical breakdowns, and missing value patterns
+  height: 1000
+  id: c004271c-32f1-4c52-a16d-12636db175ee
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: explore_dataset
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 4000
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Comprehensive analysis of 283 activated users (5.9% of base) examining
+    activation triggers, retention patterns, feature adoption depth, and predictive
+    modeling (AUC 0.84) with 9 prioritized recommendations
+  height: 1000
+  id: c725ad39-7afc-4497-81b5-35ae5e4f9bf1
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: activated_user_analysis_review
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 4
+  variables: null
+  width: 1600
+  x: 14000
+  y: 11000
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: 'Defines 3 user retention metrics: activation rate, MAU cohort retention,
+    and feature adoption depth score with segmentation strategy'
+  height: 1000
+  id: c999c189-c52f-443f-98c9-e70da695cb05
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: analysis_plan
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 4
+  variables: null
+  width: 1600
+  x: 6000
+  y: 4000
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Displays all categorical columns with their unique values, cardinality
+    counts, and null value summaries
+  height: 1000
+  id: d607e6ed-27d4-46f9-94d7-fcfd83376a73
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: explore_categorical_columns
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 4000
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Extracts and displays Lasso model feature coefficients sorted by importance,
+    showing selected vs. zeroed features with odds multipliers for activation prediction
+  height: 1000
+  id: e2242418-f543-4139-87c5-0924dbad2abd
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: extract_lasso_coefficients
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 10000
+  y: 11000
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: 'Analyzes post-activation user behavior via 7 visualizations: geographic
+    activation rates, event popularity after day 7, time-to-activation distribution,
+    zone engagement depth, session cadence, power user metrics, and event sequencing
+    patterns'
+  height: 1000
+  id: e3003d6e-4548-41c1-8d93-21bda9281389
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: post_activation_analysis
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 12000
+  y: 11000
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: Builds user-level metrics table with activation rate, feature adoption
+    depth score, lifecycle stage, and cohort-based segmentation per user
+  height: 1000
+  id: e4eb718b-9fc7-4b2d-985c-784b7430051e
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: compute_user_metrics
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 5400
+- auto_size: false
+  canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  compute_settings: null
+  description: 'Visualizes feature adoption depth distribution across four charts:
+    zone count distribution, activation rates by segment, median credit spend by depth,
+    and activated vs non-activated user comparison.'
+  height: 1000
+  id: fe1e7d14-a8e4-4c01-8c27-bec37f89f493
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  name: depth_score_distributions
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 8200
+edges:
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 1a124c74-59ef-4dbf-82ad-adc5e6251c30
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: d607e6ed-27d4-46f9-94d7-fcfd83376a73
+  target: c004271c-32f1-4c52-a16d-12636db175ee
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 52a13c54-0d4f-45a3-b2df-d2557b141e66
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: 79724c34-c30e-44f8-9053-3e609920bb89
+  target: bc430823-0964-46fa-b9be-d3800772908a
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 6992cfa5-ae41-4338-8145-cdc5f65345d3
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: c004271c-32f1-4c52-a16d-12636db175ee
+  target: c999c189-c52f-443f-98c9-e70da695cb05
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 7a68784b-647a-44c3-9dba-647a2198e1c8
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: e2242418-f543-4139-87c5-0924dbad2abd
+  target: e3003d6e-4548-41c1-8d93-21bda9281389
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 7bb0bf28-5765-4449-9daa-24b07b85a740
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: c004271c-32f1-4c52-a16d-12636db175ee
+  target: 546c827b-ab0f-4000-ae80-5cc3a508d43a
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 8016341a-3f33-4808-894d-7db167e3e998
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: 0cfb8c3e-8aa3-41cb-8fb9-232ffb65c3c5
+  target: 7cf3db31-0e88-4e8e-b7e8-4faa5a80d3c9
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 821aa604-c3af-4003-acfc-67fe640213a2
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: 2d097e5d-cbbc-4ed4-8789-c18603465161
+  target: d607e6ed-27d4-46f9-94d7-fcfd83376a73
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 8299a74a-81f4-437b-93ad-e7209d650e24
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: e3003d6e-4548-41c1-8d93-21bda9281389
+  target: c725ad39-7afc-4497-81b5-35ae5e4f9bf1
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 92e73131-3891-4eef-a674-ae5e408f55f5
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: 42f5be3c-cbbc-4ad2-ac0a-0dd3924cfc6f
+  target: 91524c57-bd35-4014-b89a-383172db66f8
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 96ad443d-0f29-4ca5-8d88-2d1897a5ae58
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: 42f5be3c-cbbc-4ad2-ac0a-0dd3924cfc6f
+  target: e2242418-f543-4139-87c5-0924dbad2abd
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: 98cf37d4-a699-4f78-a398-feb9e7c2b0a9
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: e4eb718b-9fc7-4b2d-985c-784b7430051e
+  target: 9126662e-bc74-4b95-acb4-ee063624fb0a
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: a159db71-869b-45ed-805e-480319bd75de
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: 9126662e-bc74-4b95-acb4-ee063624fb0a
+  target: 91524c57-bd35-4014-b89a-383172db66f8
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: b1d49e79-8378-45e7-b339-75d3365d7c5a
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: e4eb718b-9fc7-4b2d-985c-784b7430051e
+  target: 4ecf4673-0de3-42ee-8c46-db381a023e56
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: bbbaba96-5a7f-40b4-b67e-02d1246e5fa6
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: 546c827b-ab0f-4000-ae80-5cc3a508d43a
+  target: 42f5be3c-cbbc-4ad2-ac0a-0dd3924cfc6f
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: d15b5f56-427f-4426-87d6-c1139705c35e
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: bc430823-0964-46fa-b9be-d3800772908a
+  target: 0cfb8c3e-8aa3-41cb-8fb9-232ffb65c3c5
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: d2f295b8-42bc-4381-ad5d-c4f1e68d5faa
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: e4eb718b-9fc7-4b2d-985c-784b7430051e
+  target: fe1e7d14-a8e4-4c01-8c27-bec37f89f493
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: d8dd1edd-8eb2-4a22-9f95-31551922602e
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: 7cf3db31-0e88-4e8e-b7e8-4faa5a80d3c9
+  target: 2d097e5d-cbbc-4ed4-8789-c18603465161
+- canvas_id: 1d0dc200-3d47-4e06-abad-4226f937b2ef
+  id: dba3230c-078a-4a4b-88bd-70533ca3882d
+  layer_id: d6e7dc61-2bf1-43c0-b0a3-adbe92967290
+  source: c004271c-32f1-4c52-a16d-12636db175ee
+  target: e4eb718b-9fc7-4b2d-985c-784b7430051e
